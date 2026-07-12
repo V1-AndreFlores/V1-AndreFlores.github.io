@@ -182,22 +182,13 @@ function App() {
             </div>
 
             <article className="project-card">
-              <div className="project-visual" aria-hidden="true">
-                <div className="phone-shell">
-                  <div className="phone-top" />
-                  <div className="phone-screen">
-                    <div className="app-logo">LM</div>
-                    <strong>Lista de Mercado Fácil</strong>
-                    <span>Compras organizadas por setores</span>
-                    <div className="mock-list">
-                      <i />
-                      <i />
-                      <i />
-                    </div>
-                  </div>
-                </div>
+              <div className="project-visual">
+                <img
+                  className="project-image"
+                  src="/lista-mercado-facil-portfolio.png"
+                  alt="Apresentação do aplicativo Lista de Mercado Fácil"
+                />
               </div>
-
               <div className="project-content">
                 <div className="project-meta">
                   <span>Aplicativo mobile</span>
