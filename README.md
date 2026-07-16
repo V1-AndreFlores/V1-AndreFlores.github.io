@@ -5,7 +5,9 @@ Site pessoal e portfólio profissional desenvolvido com React, TypeScript e Vite
 ## Endereços após a publicação
 
 - Portfólio: `https://v1-andreflores.github.io/`
-- Política de Privacidade: `https://v1-andreflores.github.io/politica-de-privacidade/`
+- Políticas de Privacidade: `https://v1-andreflores.github.io/politica-de-privacidade/`
+- Lista de Mercado Fácil: `https://v1-andreflores.github.io/politica-de-privacidade/lista-de-mercado-facil/`
+- Finanças em Dia: `https://v1-andreflores.github.io/politica-de-privacidade/financas-em-dia/`
 
 ## Executar localmente
 
@@ -17,27 +19,23 @@ npm run dev
 ## Validar o build
 
 ```bash
+npm run check
 npm run build
 npm run preview
 ```
 
 ## Publicar no GitHub Pages
 
-1. Crie um repositório público chamado `V1-AndreFlores.github.io`.
-2. Envie os arquivos deste projeto para a branch `main`.
-3. No repositório, acesse **Settings > Pages**.
-4. Em **Build and deployment > Source**, selecione **GitHub Actions**.
-5. Aguarde a execução do workflow **Deploy GitHub Pages**.
+1. Envie os arquivos para a branch `main` do repositório `V1-AndreFlores.github.io`.
+2. Em **Settings > Pages**, mantenha **GitHub Actions** como origem da publicação.
+3. Aguarde a conclusão do workflow de deploy.
 
 Cada novo `push` na branch `main` executará o build e atualizará o site automaticamente.
 
-## Observação sobre a política de privacidade
+## Políticas de privacidade
 
-O texto considera que o aplicativo Lista de Mercado Fácil:
+O projeto mantém uma página central com links para as políticas específicas de cada aplicativo.
 
-- não exige cadastro ou login;
-- não coleta ou compartilha dados pessoais;
-- não utiliza publicidade, analytics, crash reporting ou rastreamento;
-- mantém listas e histórico localmente no dispositivo.
+As políticas devem ser revisadas sempre que um aplicativo adicionar serviços externos, autenticação online, sincronização em nuvem, analytics, publicidade, crash reporting, integração bancária ou novas permissões do dispositivo.
 
-A política deve ser revisada antes da publicação caso algum SDK, permissão ou serviço externo seja adicionado ao aplicativo.
+A estrutura técnica e as regras de manutenção estão registradas em `Referencia_Estrutura_Projeto_Portfolio.md`.

@@ -286,7 +286,7 @@ function App() {
                   </a>
                   <a
                     className="button button-secondary"
-                    href="/politica-de-privacidade/"
+                    href="/politica-de-privacidade/financas-em-dia/"
                   >
                     Política de Privacidade
                   </a>
@@ -330,7 +330,7 @@ function App() {
                   </a>
                   <a
                     className="button button-secondary"
-                    href="/politica-de-privacidade/"
+                    href="/politica-de-privacidade/lista-de-mercado-facil/"
                   >
                     Política de Privacidade
                   </a>

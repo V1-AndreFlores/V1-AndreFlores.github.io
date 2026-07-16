@@ -10,6 +10,14 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         privacy: resolve(__dirname, 'politica-de-privacidade/index.html'),
+        privacyListaMercadoFacil: resolve(
+          __dirname,
+          'politica-de-privacidade/lista-de-mercado-facil/index.html',
+        ),
+        privacyFinancasEmDia: resolve(
+          __dirname,
+          'politica-de-privacidade/financas-em-dia/index.html',
+        ),
       },
     },
   },
