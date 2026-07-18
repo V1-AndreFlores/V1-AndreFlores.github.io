@@ -18,6 +18,247 @@ type PrivacyPolicyDefinition = {
 
 const privacyBasePath = '/politica-de-privacidade';
 
+const corujaPolicy: PrivacyPolicyDefinition = {
+  slug: 'coruja',
+  appName: 'Coruja — Sobre filmes e séries',
+  updatedAt: '18 de julho de 2026',
+  summary:
+    'O Coruja não exige cadastro, não possui anúncios e não envia favoritos, itens da lista Quero Assistir ou histórico para servidores do desenvolvedor. O aplicativo consulta a API TMDB para apresentar informações públicas sobre filmes, séries, pessoas, trailers e disponibilidade de streaming.',
+  indexDescription:
+    'Política aplicável ao aplicativo de descoberta de filmes e séries, busca, detalhes, favoritos e disponibilidade de streaming.',
+  sections: [
+    {
+      title: '1. Identificação',
+      content: (
+        <p>
+          Esta Política de Privacidade descreve como o aplicativo{' '}
+          <strong>Coruja — Sobre filmes e séries</strong>, desenvolvido por{' '}
+          <strong>André Flores</strong>, trata as informações utilizadas durante o uso do
+          aplicativo.
+        </p>
+      ),
+    },
+    {
+      title: '2. Cadastro e dados pessoais',
+      content: (
+        <>
+          <p>O aplicativo não exige cadastro, conta de usuário ou login.</p>
+          <p>O desenvolvedor não solicita ou coleta diretamente:</p>
+          <ul>
+            <li>nome, endereço, telefone ou documentos de identificação;</li>
+            <li>e-mail, senha ou credenciais de redes sociais;</li>
+            <li>dados bancários, números de cartão ou informações de pagamento;</li>
+            <li>contatos, localização precisa, câmera ou microfone;</li>
+            <li>identificadores destinados a publicidade comportamental.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: '3. Informações armazenadas localmente',
+      content: (
+        <>
+          <p>
+            Favoritos, itens da lista <strong>Quero Assistir</strong>, histórico de
+            visualizações e buscas, tema e preferências do aplicativo podem ser armazenados
+            localmente no dispositivo do usuário.
+          </p>
+          <p>
+            Essas informações não são enviadas para servidores do desenvolvedor e não são
+            utilizadas para criar perfis comerciais ou comportamentais.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '4. Consulta ao catálogo TMDB',
+      content: (
+        <>
+          <p>
+            O aplicativo utiliza a API do <strong>TMDB — The Movie Database</strong> para
+            obter informações públicas sobre filmes, séries e pessoas, incluindo títulos,
+            sinopses, imagens, gêneros, duração, elenco, equipe, trailers, tendências,
+            lançamentos e disponibilidade de provedores de streaming.
+          </p>
+          <p>
+            Para executar essas consultas, o dispositivo se comunica pela internet com os
+            serviços do TMDB. Como ocorre em serviços online, o provedor pode processar dados
+            técnicos necessários à conexão, como endereço IP, data, horário e informações da
+            requisição, conforme suas próprias políticas.
+          </p>
+          <p>
+            Favoritos, histórico e itens da lista Quero Assistir não são enviados ao TMDB pelo
+            aplicativo.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '5. Buscas e filtros',
+      content: (
+        <>
+          <p>
+            Os termos digitados na busca e os filtros utilizados podem ser enviados ao TMDB
+            somente para localizar filmes e séries correspondentes.
+          </p>
+          <p>
+            A busca pode localizar produções por título ou pelo nome de pessoas participantes,
+            mas o aplicativo apresenta como resultado os filmes e séries relacionados, sem
+            criar perfis de usuário.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '6. Onde assistir e links externos',
+      content: (
+        <>
+          <p>
+            As informações de disponibilidade para assinatura, aluguel ou compra no Brasil são
+            obtidas a partir dos dados de provedores disponibilizados pelo TMDB.
+          </p>
+          <p>
+            Ao abrir trailers, serviços de streaming ou outros links externos, o usuário pode ser
+            direcionado a aplicativos ou sites de terceiros. O tratamento de dados nesses
+            ambientes é regido pelas políticas dos respectivos provedores.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '7. Compartilhamento de dados',
+      content: (
+        <p>
+          O desenvolvedor não vende nem compartilha dados pessoais, favoritos, histórico ou
+          preferências com anunciantes, redes sociais, corretores de dados ou plataformas de
+          análise comportamental.
+        </p>
+      ),
+    },
+    {
+      title: '8. Publicidade, análise e rastreamento',
+      content: (
+        <>
+          <p>Na versão atual, o aplicativo não utiliza serviços de:</p>
+          <ul>
+            <li>publicidade ou personalização de anúncios;</li>
+            <li>rastreamento entre aplicativos ou sites;</li>
+            <li>Google Analytics ou Firebase Analytics;</li>
+            <li>Firebase Crashlytics ou Sentry;</li>
+            <li>login por redes sociais;</li>
+            <li>sincronização de favoritos ou histórico em nuvem.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: '9. Permissões e conexão com a internet',
+      content: (
+        <>
+          <p>
+            O acesso à internet é necessário para carregar o catálogo, executar buscas, exibir
+            imagens, consultar detalhes, trailers e informações de disponibilidade.
+          </p>
+          <p>
+            O aplicativo não precisa acessar localização precisa, contatos, câmera ou microfone
+            para executar suas funções principais.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '10. Segurança',
+      content: (
+        <>
+          <p>
+            Como favoritos, histórico e preferências permanecem no dispositivo, sua proteção
+            também depende dos mecanismos de segurança do aparelho, como bloqueio de tela,
+            criptografia e atualizações do sistema operacional.
+          </p>
+          <p>
+            As credenciais técnicas utilizadas para leitura da API são destinadas ao acesso ao
+            catálogo e não representam uma conta pessoal do usuário.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '11. Retenção e exclusão',
+      content: (
+        <>
+          <p>
+            Os dados locais permanecem no dispositivo até serem removidos pelas funções
+            disponíveis no aplicativo ou pela limpeza dos dados nas configurações do sistema.
+          </p>
+          <p>
+            A desinstalação do aplicativo normalmente remove os dados locais associados, conforme
+            o comportamento do sistema operacional. Não existe uma conta remota do usuário que
+            precise ser excluída pelo desenvolvedor.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '12. Serviços da plataforma',
+      content: (
+        <p>
+          A loja de aplicativos, o sistema operacional e os serviços externos acessados podem
+          tratar informações técnicas para instalação, atualização, segurança, funcionamento da
+          rede e entrega de conteúdo, conforme suas próprias políticas.
+        </p>
+      ),
+    },
+    {
+      title: '13. Privacidade de crianças',
+      content: (
+        <p>
+          O aplicativo não é direcionado especificamente a crianças e não coleta
+          intencionalmente dados pessoais de usuários de nenhuma idade.
+        </p>
+      ),
+    },
+    {
+      title: '14. Aviso sobre o TMDB',
+      content: (
+        <>
+          <p>
+            Este produto utiliza a API do TMDB, mas não é endossado nem certificado pelo TMDB.
+          </p>
+          <p lang="en">
+            <strong>
+              This product uses the TMDB API but is not endorsed or certified by TMDB.
+            </strong>
+          </p>
+        </>
+      ),
+    },
+    {
+      title: '15. Alterações nesta política',
+      content: (
+        <p>
+          Esta Política de Privacidade poderá ser atualizada para refletir mudanças no
+          aplicativo, nos serviços externos utilizados ou em requisitos legais. A data da
+          revisão mais recente será informada no início desta página.
+        </p>
+      ),
+    },
+    {
+      title: '16. Contato',
+      content: (
+        <>
+          <p>Para dúvidas ou solicitações relacionadas à privacidade:</p>
+          <p>
+            <strong>Desenvolvedor:</strong> André Flores
+            <br />
+            <strong>E-mail:</strong>{' '}
+            <a href="mailto:dr.andre.flores@gmail.com">dr.andre.flores@gmail.com</a>
+          </p>
+        </>
+      ),
+    },
+  ],
+};
+
 const listaMercadoFacilPolicy: PrivacyPolicyDefinition = {
   slug: 'lista-de-mercado-facil',
   appName: 'Lista de Mercado Fácil',
@@ -398,7 +639,7 @@ const financasEmDiaPolicy: PrivacyPolicyDefinition = {
   ],
 };
 
-const policies = [financasEmDiaPolicy, listaMercadoFacilPolicy] as const;
+const policies = [corujaPolicy, financasEmDiaPolicy, listaMercadoFacilPolicy] as const;
 
 function getInitialTheme(): Theme {
   const storedTheme = localStorage.getItem('portfolio-theme');

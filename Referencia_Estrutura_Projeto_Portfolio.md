@@ -26,6 +26,9 @@ https://v1-andreflores.github.io/
 Índice de políticas
 https://v1-andreflores.github.io/politica-de-privacidade/
 
+Coruja — Sobre filmes e séries
+https://v1-andreflores.github.io/politica-de-privacidade/coruja/
+
 Lista de Mercado Fácil
 https://v1-andreflores.github.io/politica-de-privacidade/lista-de-mercado-facil/
 
@@ -42,12 +45,15 @@ https://v1-andreflores.github.io/politica-de-privacidade/financas-em-dia/
 │       └── deploy.yml
 ├── politica-de-privacidade/
 │   ├── index.html
+│   ├── coruja/
+│   │   └── index.html
 │   ├── financas-em-dia/
 │   │   └── index.html
 │   └── lista-de-mercado-facil/
 │       └── index.html
 ├── public/
 │   ├── andre-flores.jpg
+│   ├── coruja-portfolio.png
 │   ├── favicon.svg
 │   ├── financas-em-dia-portfolio.png
 │   └── lista-mercado-facil-portfolio.png
@@ -86,7 +92,7 @@ Responsabilidades do `App.tsx`:
 
 ### 5.2 Políticas de Privacidade
 
-As três páginas HTML de privacidade utilizam a mesma entrada React:
+As quatro páginas HTML de privacidade utilizam a mesma entrada React:
 
 ```text
 src/privacy.tsx
@@ -95,6 +101,7 @@ src/privacy.tsx
 O componente `src/PrivacyPolicy.tsx` identifica a página atual por `window.location.pathname` e exibe:
 
 - o índice de políticas; ou
+- a política do Coruja — Sobre filmes e séries; ou
 - a política do Lista de Mercado Fácil; ou
 - a política do Finanças em Dia.
 
@@ -106,6 +113,7 @@ Essa decisão evita duplicação de layout e de código de inicialização.
 |---|---|---|
 | `/` | Portfólio | Perfil, competências, projetos e contato |
 | `/politica-de-privacidade/` | Índice | Seleção do aplicativo |
+| `/politica-de-privacidade/coruja/` | Política | Documento específico do Coruja — Sobre filmes e séries |
 | `/politica-de-privacidade/lista-de-mercado-facil/` | Política | Documento específico do Lista de Mercado Fácil |
 | `/politica-de-privacidade/financas-em-dia/` | Política | Documento específico do Finanças em Dia |
 
@@ -118,6 +126,7 @@ O `vite.config.ts` usa múltiplas entradas no `rollupOptions.input`:
 ```text
 main
 privacy
+privacyCoruja
 privacyListaMercadoFacil
 privacyFinancasEmDia
 ```
@@ -182,14 +191,28 @@ As imagens devem ficar em `public` e são referenciadas a partir da raiz do site
 Exemplo:
 
 ```tsx
-<img src="/financas-em-dia-portfolio.png" alt="Apresentação do aplicativo Finanças em Dia" />
+<img src="/coruja-portfolio.png" alt="Apresentação do aplicativo Coruja sobre filmes e séries" />
 ```
 
 Não utilizar caminhos relativos a `src` para imagens que já estão em `public`.
 
 ## 11. Políticas de Privacidade
 
-### 11.1 Lista de Mercado Fácil
+### 11.1 Coruja — Sobre filmes e séries
+
+A política atual considera que:
+
+- não existe cadastro, login, publicidade ou rastreamento comportamental;
+- favoritos, lista Quero Assistir, histórico, tema e preferências permanecem no dispositivo;
+- o aplicativo consulta a API TMDB para catálogo, buscas, detalhes, pessoas, trailers, imagens e provedores de streaming;
+- termos de busca e filtros são transmitidos ao TMDB somente para retornar conteúdos correspondentes;
+- favoritos, histórico e lista Quero Assistir não são enviados ao TMDB;
+- trailers, serviços de streaming e outros links externos podem abrir ambientes de terceiros;
+- o acesso à internet é necessário para as funcionalidades de catálogo;
+- o aplicativo não solicita permissões sensíveis como localização precisa, contatos, câmera ou microfone.
+- a política inclui o aviso oficial de atribuição exigido pelo TMDB.
+
+### 11.2 Lista de Mercado Fácil
 
 A política atual considera que:
 
@@ -199,7 +222,7 @@ A política atual considera que:
 - não existe sincronização em nuvem;
 - os dados podem ser removidos pelas funções do aplicativo ou pela desinstalação.
 
-### 11.2 Finanças em Dia
+### 11.3 Finanças em Dia
 
 A política atual considera que:
 
@@ -212,7 +235,7 @@ A política atual considera que:
 - o PIN permanece no armazenamento seguro do dispositivo;
 - não há publicidade, análise comportamental ou rastreamento.
 
-### 11.3 Regra obrigatória de revisão
+### 11.4 Regra obrigatória de revisão
 
 As políticas devem ser revisadas antes de publicar uma versão que adicione qualquer um dos itens abaixo:
 
@@ -271,6 +294,7 @@ Endereços locais esperados:
 ```text
 http://localhost:5173/
 http://localhost:5173/politica-de-privacidade/
+http://localhost:5173/politica-de-privacidade/coruja/
 http://localhost:5173/politica-de-privacidade/lista-de-mercado-facil/
 http://localhost:5173/politica-de-privacidade/financas-em-dia/
 ```
@@ -288,6 +312,7 @@ Após o build, conferir:
 ```text
 dist/index.html
 dist/politica-de-privacidade/index.html
+dist/politica-de-privacidade/coruja/index.html
 dist/politica-de-privacidade/lista-de-mercado-facil/index.html
 dist/politica-de-privacidade/financas-em-dia/index.html
 ```
@@ -295,7 +320,7 @@ dist/politica-de-privacidade/financas-em-dia/index.html
 Também validar:
 
 - navegação pelos cards do portfólio;
-- acesso direto às três rotas de privacidade;
+- acesso direto às quatro rotas de privacidade;
 - tema claro e escuro;
 - layout em desktop e dispositivos móveis;
 - links de contato;
@@ -310,7 +335,7 @@ Fluxo padrão:
 
 ```bash
 git add .
-git commit -m "Atualiza políticas de privacidade dos aplicativos"
+git commit -m "Adiciona Coruja ao portfólio e às políticas de privacidade"
 git push
 ```
 

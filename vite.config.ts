@@ -10,6 +10,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         privacy: resolve(__dirname, 'politica-de-privacidade/index.html'),
+        privacyCoruja: resolve(
+          __dirname,
+          'politica-de-privacidade/coruja/index.html',
+        ),
         privacyListaMercadoFacil: resolve(
           __dirname,
           'politica-de-privacidade/lista-de-mercado-facil/index.html',

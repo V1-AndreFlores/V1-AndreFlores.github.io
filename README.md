@@ -6,6 +6,7 @@ Site pessoal e portfólio profissional desenvolvido com React, TypeScript e Vite
 
 - Portfólio: `https://v1-andreflores.github.io/`
 - Políticas de Privacidade: `https://v1-andreflores.github.io/politica-de-privacidade/`
+- Coruja — Sobre filmes e séries: `https://v1-andreflores.github.io/politica-de-privacidade/coruja/`
 - Lista de Mercado Fácil: `https://v1-andreflores.github.io/politica-de-privacidade/lista-de-mercado-facil/`
 - Finanças em Dia: `https://v1-andreflores.github.io/politica-de-privacidade/financas-em-dia/`
 
@@ -34,7 +35,7 @@ Cada novo `push` na branch `main` executará o build e atualizará o site automa
 
 ## Políticas de privacidade
 
-O projeto mantém uma página central com links para as políticas específicas de cada aplicativo.
+O projeto mantém uma página central com links para as políticas específicas do Coruja — Sobre filmes e séries, Finanças em Dia e Lista de Mercado Fácil.
 
 As políticas devem ser revisadas sempre que um aplicativo adicionar serviços externos, autenticação online, sincronização em nuvem, analytics, publicidade, crash reporting, integração bancária ou novas permissões do dispositivo.
 

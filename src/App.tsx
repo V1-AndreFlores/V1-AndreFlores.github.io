@@ -254,6 +254,52 @@ function App() {
               <div className="project-visual">
                 <img
                   className="project-image"
+                  src="/coruja-portfolio.png"
+                  alt="Apresentação do aplicativo Coruja sobre filmes e séries"
+                />
+              </div>
+              <div className="project-content">
+                <div className="project-meta">
+                  <span>Aplicativo mobile</span>
+                </div>
+                <h3>Coruja — Sobre filmes e séries</h3>
+                <p>
+                  Aplicativo para descobrir filmes e séries, consultar detalhes,
+                  elenco, trailers e disponibilidade nas principais plataformas
+                  de streaming no Brasil.
+                </p>
+                <ul className="project-features">
+                  <li>React Native, Expo, TypeScript e Expo Router</li>
+                  <li>Catálogo, busca e detalhes integrados à API TMDB</li>
+                  <li>Busca por títulos e pessoas, com filtros de streaming</li>
+                  <li>Favoritos, Quero Assistir e histórico armazenados localmente</li>
+                </ul>
+                <div className="project-actions">
+                  <a
+                    className="button button-primary"
+                    href="https://github.com/V1-AndreFlores/coruja-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver repositório
+                  </a>
+                  <a
+                    className="button button-secondary"
+                    href="/politica-de-privacidade/coruja/"
+                  >
+                    Política de Privacidade
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              className="project-card"
+              style={{ marginBottom: "1.5rem" }}
+            >
+              <div className="project-visual">
+                <img
+                  className="project-image"
                   src="/financas-em-dia-portfolio.png"
                   alt="Apresentação do aplicativo Finanças em Dia"
                 />
